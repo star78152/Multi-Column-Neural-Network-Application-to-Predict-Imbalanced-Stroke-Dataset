@@ -1,0 +1,26 @@
+
+
+
+	 Elapsed time is 443.3395 seconds.
+	 (trained by trainscg, with 1 hidden nodes) averaged performance: 0.14582 (std 0.000) in total   10 runs
+
+	 Elapsed time is 727.1519 seconds.
+	 (trained by trainscg, with 2 hidden nodes) averaged performance: 0.14340 (std 0.001) in total   10 runs
+
+	 Elapsed time is 903.9469 seconds.
+	 (trained by trainscg, with 5 hidden nodes) averaged performance: 0.13802 (std 0.001) in total   10 runs
+
+	 Elapsed time is 870.4425 seconds.
+	 (trained by trainscg, with 10 hidden nodes) averaged performance: 0.12929 (std 0.001) in total   10 runs
+
+	 Elapsed time is 1121.1671 seconds.
+	 (trained by trainscg, with 15 hidden nodes) averaged performance: 0.12188 (std 0.002) in total   10 runs
+
+	 Elapsed time is 1151.9202 seconds.
+	 (trained by trainscg, with 20 hidden nodes) averaged performance: 0.11362 (std 0.002) in total   10 runs
+
+	 Elapsed time is 1334.9576 seconds.
+	 (trained by trainscg, with 25 hidden nodes) averaged performance: 0.10791 (std 0.003) in total   10 runs
+
+	 Elapsed time is 2072.2057 seconds.
+	 (trained by trainscg, with 50 hidden nodes) averaged performance: 0.07534 (std 0.005) in total   10 runs
