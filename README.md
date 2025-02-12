@@ -33,19 +33,9 @@ AI的學習非常仰賴Data，網路模型需要非常大量的資料去演算�
 ### 訓練演算法
 #### Levenberg-Marquardt (LM) Algorithm
 Levenberg-Marquardt(LM)演算法也稱為Damped least-squares (DLS)，常用於解決非線性最小二乘問題。結合了梯度下降法和高斯牛頓法來獲得最佳解，具有梯度下降法的全局搜索和高斯牛頓法的快速收斂特性，能夠使神經網路快速收斂，是訓練中等大小的feedforward neural networks(No more than a thousand weights)的最快方法。缺點是需要較大的記憶體需求。
-以下是LM算法公式，當𝜇=0時，將會使用高斯牛頓法；當𝜇很大時則轉換為梯度下降法：<br>
-$$
-x_{k+1} = x_k - \left( J^T J + \mu I \right)^{-1} J^T e
-$$
 
 #### Scaled conjugate gradient (SCG) Algorithm
-Scaled conjugate gradient (SCG)是常見的監督式學習算法，由Moller在1993年提出的演算法。將LM算法使用的信賴區間法與共軛梯度演算法結合起來，減少用於調整方向時搜尋網路的時間，是一種快速且有效的算法。SCG的記憶體需求相對較小，但是比標準的梯度下降算法要快得多。該演算法通過採用步長縮放機制，避免在了在每次學習反覆運算中所進行的線性搜尋，大幅度的降低計算複雜度。SCG公式，如下所述：<br>
-$$
-s_k = \frac{E^{\prime} (w_k + \sigma_k p_k) - E^{\prime} (w_k)}{\sigma_k} + \lambda_k p_k
-$$
-<br>
-( 𝐸^` (𝑤_𝑘)為gradient error，𝜎_𝑘和𝑝_𝑘分別為search direction和step size，而𝜆_𝑘是用來調節𝐸^` (𝑤_𝑘)的不確定性。 )
-
+Scaled conjugate gradient (SCG)是常見的監督式學習算法，由Moller在1993年提出的演算法。將LM算法使用的信賴區間法與共軛梯度演算法結合起來，減少用於調整方向時搜尋網路的時間，是一種快速且有效的算法。SCG的記憶體需求相對較小，但是比標準的梯度下降算法要快得多。該演算法通過採用步長縮放機制，避免在了在每次學習反覆運算中所進行的線性搜尋，大幅度的降低計算複雜度。
 
 ## Dataset
 Dataset: " Kaggle: HealthCare Problem: Prediction Stroke Patients " [27]
