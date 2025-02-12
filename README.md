@@ -9,7 +9,7 @@
 
 ## 方法
 AI的學習非常仰賴Data，網路模型需要非常大量的資料去演算及改進，但若數據擁有不平衡的問題時，則會對網路模型的學習造成非常大的問題和困擾。本研究使用的採樣方法有Oversampling、Undersampling和Synthetic Minority Oversampling Technique (SMOTE)。讓ANN透過Supervised Learning的方式和演算法的優化。最後將三種方法訓練的網路模型建構成多列類神經網路(MCNN)，以提高分類準確率。<br>
-![No Image!!](/img/Multi_Column_Neural_Network_MCNN.jpg"多列類神經網路(MCNN)")
+![No Image!!](/img/Multi_Column_Neural_Network_MCNN.jpg "多列類神經網路(MCNN)")
 
 
 ### 採樣方法
